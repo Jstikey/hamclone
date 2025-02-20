@@ -7,6 +7,15 @@ import Settings from "./icons/Settings";
 import Mine from "./icons/Mine";
 import Friends from "./icons/Friends";
 import Coins from "./icons/Coins";
+import {
+  binanceLogo,
+  dailyReward,
+  dailyCipher,
+  dailyCombo,
+  dollarCoin,
+  hamsterCoin,
+  mainCharacter,
+} from "./images";
 
 const App = () => {
   const levelNames = [
@@ -177,21 +186,13 @@ const App = () => {
             </div>
 
             <div className="flex items-center w-2/3 border-2 border-[#43433b] rounded-full py-[2x] px-4 bg-[#43433b]/[0.6] max-w-64">
-              <img
-                src="src\images\binance-logo.png"
-                alt=""
-                className="w-8 h-8"
-              />
+              <img src={binanceLogo} alt="" className="w-8 h-8" />
               <div className="flex-1 text-center">
                 <p className="text-xs text-[#85827d] font-medium">
                   profit per hour
                 </p>
                 <div className="flex items-center justify-center space-x-1">
-                  <img
-                    src="src\images\dollar-coin.png"
-                    alt=""
-                    className="w-[18px] h-[18px]"
-                  />
+                  <img src={dollarCoin} alt="" className="w-[18px] h-[18px]" />
                   <p className="text-sm ">
                     {formartProfitPerHour(profitPerHour)}
                   </p>
@@ -208,11 +209,7 @@ const App = () => {
             <div className="px-4 mt-6 flex justify-between gap-2">
               <div className="bg-[#272a2f] rounded-lg px-4 py-2 w-full relative">
                 <div className="dot"></div>
-                <img
-                  src="src\images\daily-reward.png"
-                  alt=""
-                  className="mx-auto w-12 h-12 "
-                />
+                <img src={dailyReward} alt="" className="mx-auto w-12 h-12 " />
                 <p className="text-[10px] text-center text-white mt-1">
                   Daily reward
                 </p>
@@ -222,11 +219,7 @@ const App = () => {
               </div>
               <div className="bg-[#272a2f] rounded-lg px-4 py-2 w-full relative">
                 <div className="dot"></div>
-                <img
-                  src="src\images\daily-cipher.png"
-                  alt=""
-                  className="mx-auto w-12 h-12 "
-                />
+                <img src={dailyCipher} alt="" className="mx-auto w-12 h-12 " />
                 <p className="text-[10px] text-center text-white mt-1">
                   Daily cypher
                 </p>
@@ -236,11 +229,7 @@ const App = () => {
               </div>
               <div className="bg-[#272a2f] rounded-lg px-4 py-2 w-full relative">
                 <div className="dot"></div>
-                <img
-                  src="src\images\daily-combo.png"
-                  alt=""
-                  className="mx-auto w-12 h-12 "
-                />
+                <img src={dailyCombo} alt="" className="mx-auto w-12 h-12 " />
                 <p className="text-[10px] text-center text-white mt-1">
                   Daily combo
                 </p>
@@ -252,11 +241,7 @@ const App = () => {
 
             <div className=" px-4 mt-4 flex justify-center ">
               <div className="px-4 py-2 flex items-center space-x-2">
-                <img
-                  src="src/images/dollar-coin.png"
-                  alt=""
-                  className="w-10 h-10"
-                />
+                <img src={dollarCoin} alt="" className="w-10 h-10" />
                 <p className="text-4xl text-white">{points.toLocaleString()}</p>
               </div>
             </div>
@@ -267,11 +252,7 @@ const App = () => {
                 onClick={handleCardClick}
               >
                 <div className="w-full h-full rounded-full circle-inner">
-                  <img
-                    src="src\images\main-character.png"
-                    alt=""
-                    className="w-full h-full "
-                  />
+                  <img src={mainCharacter} alt="" className="w-full h-full " />
                 </div>
               </div>
             </div>
@@ -281,11 +262,7 @@ const App = () => {
 
       <div className="fixed bottom-0 left-1/2 transform -translate-x-1/2 w-[calc(100%-2rem)] max-w-xl bg-[#272a2f] flex justify-around items-center z-50 rounded-3xl text-xs">
         <div className="text-center text-[#85827d] w-1/5 bg-[#1c1f24] m-1 p-2 rounded-2xl">
-          <img
-            src="src\images\binance-logo.png"
-            alt=""
-            className="w-8 h-8 mx-auto "
-          />
+          <img src={binanceLogo} alt="" className="w-8 h-8 mx-auto " />
           <p className="mt-1 ">Exchange</p>
         </div>
         <div className="text-center text-[#85827d] w-1/5 bg-[#1c1f24] m-1 p-2 rounded-2xl">
@@ -301,11 +278,7 @@ const App = () => {
           <p className="mt-1 ">Earn</p>
         </div>
         <div className="text-center text-[#85827d] w-1/5 bg-[#1c1f24] m-1 p-2 rounded-2xl">
-          <img
-            src="src\images\hamster-coin.png"
-            alt=""
-            className="w-8 h-8 mx-auto "
-          />
+          <img src={hamsterCoin} alt="" className="w-8 h-8 mx-auto " />
           <p className="mt-1 ">Airdrop</p>
         </div>
       </div>
